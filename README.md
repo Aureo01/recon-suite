@@ -73,7 +73,6 @@ Because knowing *what’s in front* changes everything.
 - Custom port ranges
 
 Example:
-```bash
 -p 1-1000
 -p 22,80,443
 -p 8000-9000
@@ -82,7 +81,7 @@ Fast enough to be useful.
 Careful enough to not be stupid.
 
 Usage:
-
+```bash
 Basic recon:
 
 python3 reconsuite.py example.com
