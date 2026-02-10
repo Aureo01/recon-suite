@@ -84,22 +84,21 @@ Careful enough to not be stupid.
 Usage:
 
 Basic recon:
-
+```python
 python3 reconsuite.py example.com
 
 With custom ports:
-
+```python
 python3 reconsuite.py example.com -p 22,80,443,8080
 
 Higher concurrency:
-
+```python
 python3 reconsuite.py example.com -c 300
 
 With ipinfo token (better GeoIP / ASN accuracy):
-
+```python
 python3 reconsuite.py example.com --token YOUR_IPINFO_TOKEN
 
----
 
 Output
 
