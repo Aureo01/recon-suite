@@ -5,7 +5,7 @@ before you even think about exploitation.
 
 IP, ASN, WAF, TLS, ports, latency, WHOIS — all in one clean pass.
 
-Less guessing. More context. 🧠
+Less guessing. More context. 
 
 ---
 
@@ -31,14 +31,14 @@ Before wasting time.
 
 Given a domain or IP, ReconSuite collects:
 
-- 🌍 GeoIP & ASN (via ipinfo)
-- 🔁 Reverse DNS
-- 🧱 WAF / CDN detection (Cloudflare, Akamai, Imperva, etc.)
-- 🌐 HTTP fingerprinting
-- 🔐 TLS certificate details
-- ⏱️ Latency baselines (22 / 80 / 443 / 8080)
-- 🔓 Port scanning (async, fast)
-- 📄 WHOIS information
+-  GeoIP & ASN (via ipinfo)
+-  Reverse DNS
+-  WAF / CDN detection (Cloudflare, Akamai, Imperva, etc.)
+-  HTTP fingerprinting
+-  LS certificate details
+-  Latency baselines (22 / 80 / 443 / 8080)
+-  Port scanning (async, fast)
+-  WHOIS information
 
 All correlated into **one report**.
 
@@ -83,6 +83,28 @@ Careful enough to not be stupid.
 
 Usage:
 
+Basic recon:
+
+python3 reconsuite.py example.com
+
+With custom ports:
+
+python3 reconsuite.py example.com -p 22,80,443,8080
+
+Higher concurrency:
+
+python3 reconsuite.py example.com -c 300
+
+With ipinfo token (better GeoIP / ASN accuracy):
+
 python3 reconsuite.py example.com --token YOUR_IPINFO_TOKEN
+
+---
+
+Output
+
+- Rich console report (tables + panels)
+
+- Full JSON report saved automatically
 
 
